@@ -1,0 +1,694 @@
+/* HIDE SHAREPOINT DEFAULT */
+#pageTitle {
+    display: none
+}
+
+
+/* #ms-designer-ribbon {
+    display: none
+}
+
+#dialogTitleSpan {
+    display: none !important;
+}
+
+#dlgTitleBtns {
+    margin-right: 11px;
+}
+
+
+
+#MSOZoneCell_WebPartWPQ2 {
+    display: none
+} */
+#onetIDListForm {
+    width: 98.6%;
+}
+
+/* #MSOZoneCell_WebPartWPQ2 {
+    display: none;
+} */
+
+
+
+
+
+
+/* HIDE SHAREPOINT DEFAULT  */
+
+
+/* ENPS FORM SURVEY */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+/* .container {
+    max-width: 755px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+} */
+
+#contact input[type="text"],
+#contact button[type="submit"] {
+    font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+    background: #F9F9F9;
+    padding: 25px;
+    margin: 150px 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contact h3 {
+    display: block;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+#contact h4 {
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#contact input[type="text"] {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+#contact input[type="text"]:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+}
+
+#contact button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #4CAF50;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+    background: #43A047;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#contact input:focus {
+    outline: 0;
+    border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+    color: #888;
+}
+
+:-moz-placeholder {
+    color: #888;
+}
+
+::-moz-placeholder {
+    color: #888;
+}
+
+:-ms-input-placeholder {
+    color: #888;
+}
+
+/* ENPS FORM SURVEY */
+
+
+/* radio button */
+
+.form-radio {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    position: relative;
+    background-color: #f1f1f1;
+    color: #666;
+    top: 10px;
+    height: 30px;
+    width: 30px;
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-right: 7px;
+    outline: none;
+    border: 1px solid #ddd;
+    left: 20px;
+}
+
+.form-radio:checked::before {
+    position: absolute;
+    font: 13px/1 'Open Sans', sans-serif;
+    left: 11px;
+    top: 7px;
+    content: '\02143';
+    transform: rotate(40deg);
+}
+
+.form-radio:hover {
+    background-color: #f7f7f7;
+}
+
+.form-radio:checked {
+    background-color: #f1f1f1;
+}
+
+/* label {
+    font: 300 16px/1.7 'Open Sans', sans-serif;
+    color: #666;
+    cursor: pointer;
+    right: 8px;
+    padding-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+} */
+
+/* radio button */
+
+
+/* all items storage of survey */
+
+#data_results1 {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#data_results1 td,
+#data_results1 th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#data_results1 tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#data_results1 tr:hover {
+    background-color: #ddd;
+}
+
+#data_results1 th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #1BA1E2;
+    color: white;
+}
+
+
+#feedback_results1 {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#feedback_results1 td,
+#feedback_results1 th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#feedback_results1 tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#feedback_results1 tr:hover {
+    background-color: #ddd;
+}
+
+#feedback_results1 th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #1BA1E2;
+    color: white;
+}
+
+
+.button {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    /* padding: 16px 32px; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* .feedback_td:empty {
+    visibility: hidden;
+} */
+
+/* .ms-listviewtable {
+    width: 100%;
+}
+
+#CSRListViewControlDivWPQ2 {
+    display: none;
+}
+
+#Hero-WPQ2 {
+    display: none;
+} */
+
+/* all items storage of survey */
+
+
+/* loading */
+
+.loading__anim {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    border: 5px solid rgba(189, 189, 189, 0.25);
+    border-left-color: #039be5;
+    border-top-color: #039be5;
+    border-radius: 50%;
+    animation: rotate 600ms infinite linear;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+/* loading */
+
+/* disabled button */
+
+.disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* disabled button */
+
+
+canvas {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.container1 {
+    width: 34%;
+    height: 325px;
+    margin: 15px auto;
+}
+
+/* pie */
+[class$="-legend"] {
+    list-style: none;
+    cursor: pointer;
+    padding-left: 31%;
+}
+
+[class$="-legend"] li {
+    display: block;
+    padding: 0 5px;
+}
+
+[class$="-legend"] li.hidden {
+    text-decoration: line-through;
+}
+
+[class$="-legend"] li span {
+    border-radius: 5px;
+    display: inline-block;
+    height: 10px;
+    margin-right: 10px;
+    width: 10px;
+}
+
+
+
+/* table ENPS score */
+#enps_table {
+    color: #333;
+    font-family: Helvetica, Arial, sans-serif;
+    width: 640px;
+    border-collapse:
+        collapse;
+    border-spacing: 0;
+    border: solid 1px #D9DADC;
+    position: relative;
+    bottom: -30px;
+    width: 100%;
+    table-layout: fixed;
+}
+
+td,
+th {
+    /* border: 1px solid transparent; */
+    /* No more visible border */
+    height: 29px;
+    transition: all 0.3s;
+    /* Simple transition for hover effect */
+}
+
+#enps_th {
+    background: #F9FAFB;
+    /* Darken header a bit */
+    font-weight: bold;
+    font-size: small;
+}
+
+td {
+    background: #FAFAFA;
+    text-align: center;
+}
+
+/* Cells in even rows (2,4,6...) are one color */
+tr:nth-child(even) td {
+    background: #FEFEFE;
+}
+
+/* Cells in odd rows (1,3,5...) are another (excludes header cells)  */
+tr:nth-child(odd) td {
+    background: #F9FAFB;
+}
+
+tr:nth-child(odd) {
+    border: solid 1px #D9DADC;
+}
+
+
+/* table  ENPS feedback*/
+#enps_feedback_table {
+    color: #333;
+    font-family: Helvetica, Arial, sans-serif;
+    width: 640px;
+    border-collapse:
+        collapse;
+    border-spacing: 0;
+    border: solid 1px #D9DADC;
+    position: relative;
+    bottom: 33px !important;
+    width: 100%;
+}
+
+td,
+th {
+    /* border: 1px solid transparent; */
+    /* No more visible border */
+    height: 29px;
+    transition: all 0.3s;
+    /* Simple transition for hover effect */
+}
+
+#enps_feedback_th {
+    background: #F9FAFB;
+    /* Darken header a bit */
+    font-weight: bold;
+    font-size: small;
+}
+
+td {
+    background: #FAFAFA;
+    text-align: center;
+
+}
+
+.tdbreak {
+    word-break: break-all;
+    width: 55%;
+    border: 1px solid #ddd;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: left;
+    padding: 19px;
+}
+
+/* Cells in even rows (2,4,6...) are one color */
+tr:nth-child(even) td {
+    background: #FEFEFE;
+}
+
+/* Cells in odd rows (1,3,5...) are another (excludes header cells)  */
+tr:nth-child(odd) td {
+    background: #F9FAFB;
+}
+
+tr:nth-child(odd) {
+    border: solid 1px #D9DADC;
+}
+
+/* dropdown */
+select#soflow,
+select#soflow-color {
+    -webkit-appearance: button;
+    -webkit-border-radius: 2px;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    -webkit-padding-end: 20px;
+    -webkit-padding-start: 2px;
+    -webkit-user-select: none;
+    background-image: url(https://intranet.houseofit.com.au/SiteAssets/Scripts/ENPS%20Survey%20and%20Report/icon/dropdown_icon.png),
+        -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+    background-position: 97% center;
+    background-repeat: no-repeat;
+    border: 1px solid #AAA;
+    color: #555;
+    font-size: inherit;
+    margin: 20px;
+    overflow: hidden;
+    padding: 5px 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 151px;
+}
+
+select#soflow-color {
+    color: #fff;
+    background-image: url(https://intranet.houseofit.com.au/SiteAssets/Scripts/ENPS%20Survey%20and%20Report/icon/dropdown_icon.png),
+        -webkit-linear-gradient(#779126, #779126 40%, #779126);
+    background-color: #779126;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    /* border-radius: 20px; */
+    padding-left: 15px;
+}
+
+select.ms-RadioText,
+select,
+.sp-peoplepicker-topLevel {
+    border-radius: 0em !important;
+}
+
+
+/* TAB */
+/*
+ CSS for the main interaction
+*/
+.tabset>input[type="radio"] {
+    position: absolute;
+    left: -200vw;
+}
+
+.tabset .tab-panel {
+    display: none;
+}
+
+.tabset>input:first-child:checked~.tab-panels>.tab-panel:first-child,
+.tabset>input:nth-child(3):checked~.tab-panels>.tab-panel:nth-child(2),
+.tabset>input:nth-child(5):checked~.tab-panels>.tab-panel:nth-child(3),
+.tabset>input:nth-child(7):checked~.tab-panels>.tab-panel:nth-child(4),
+.tabset>input:nth-child(9):checked~.tab-panels>.tab-panel:nth-child(5),
+.tabset>input:nth-child(11):checked~.tab-panels>.tab-panel:nth-child(6) {
+    display: block;
+}
+
+label {
+    font: 300 16px/1.7 'Open Sans', sans-serif;
+    color: #666;
+    right: 11px;
+    margin-bottom: 0;
+}
+
+.tabset>label {
+    position: relative;
+    display: inline-block;
+    padding: 5px 12px 11px;
+    border: 1px solid transparent;
+    border-bottom: 0;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.tabset>label::after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+    width: 22px;
+    height: 4px;
+    background: #8d8d8d;
+}
+
+.tabset>label:hover,
+.tabset>input:focus+label {
+    color: #06c;
+}
+
+.tabset>label:hover::after,
+.tabset>input:focus+label::after,
+.tabset>input:checked+label::after {
+    background: #06c;
+}
+
+.tabset>input:checked+label {
+    border-color: #ccc;
+    border-bottom: 1px solid #fff;
+    margin-bottom: -1px;
+}
+
+.tab-panel {
+    padding: 30px 0;
+    border-top: 1px solid #ccc;
+}
+
+/*
+ Demo purposes only
+*/
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* body {
+  padding: 30px;
+} */
+
+/* .tabset {
+    max-width: 65em;
+} */
+
+
+/* gauge chart */
+/* body {
+  background: #666;
+} */
+
+.container_gauge {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 16px;
+    position: relative;
+    left: 47%;
+    bottom: 231px;
+}
+
+.gauge {
+    width: 100%;
+    max-width: 350px;
+    max-height: 350px;
+    min-width: 250px;
+    min-height: 250px;
+    /*   padding: 0;
+  border: 1px solid #666;
+  background: #F8F8F8; */
+}
+
+.gauge-data {
+    text-align: center;
+    color: #666;
+    display: block;
+}
+
+.gauge-data>* {
+    display: block;
+}
+
+.gauge-value {
+    font-size: 3em;
+}
+
+.gauge-text {
+    font-size: 1.0em;
+    font-weigt: normal;
+    margin-top: 10px;
+}
+
+.gauge-unit {
+    margin-top: 5px;
+    font-size: .9em;
+}
+
+.gauge-value {
+    font-size: 2em !important;
+    position: relative;
+    top: 6px;
+    left: 1px;
+}
+
+
+/* star */
+#stars {
+    font-size: 18px;
+    margin-left: 7px;
+    margin-bottom: 4px;
+}
