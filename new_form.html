@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>NewForm Survey</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/SiteAssets/Scripts/ENPS Survey and Report/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/SplitText.min.js"></script>
+
+        <!-- <link href='https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:700' rel='stylesheet'
+            type='text/css'>
+        <style>
+            @import url(//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css);
+            @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+        </style>
+        <link rel="stylesheet" href="https://2-22-4-dot-lead-pages.appspot.com/static/lp918/min/default_thank_you.css">
+
+        <script src="https://2-22-4-dot-lead-pages.appspot.com/static/lp918/min/html5shiv.js"></script> -->
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script> -->
+    </head>
+    <style>
+        #WebPartWPQ2 {
+            display: none;
+        }
+
+        #s4-ribbonrow {
+            display: none;
+        }
+
+        .ms-fullscreenmode #contentBox {
+            margin-left: 0;
+        }
+
+        #sideNavBox {
+            display: none;
+        }
+
+        #sideNavBox {
+            display: none !important;
+        }
+
+        #contentBox {
+            margin-right: -24px;
+            min-width: 703px;
+            margin-left: 0 !important;
+        }
+
+        label {
+            font: 300 16px/1.7 'Open Sans', sans-serif;
+            color: #666;
+            cursor: pointer;
+            right: 8px;
+            padding-bottom: 20px;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .jumbotron {
+            background-color: transparent !important;
+        }
+
+        #onetIDListForm {
+            margin-top: -21px;
+
+        }
+    </style>
+
+    <body>
+
+        <div id="loader_show_hide" style="display:none">
+            <div id="loader"
+                style="display:table; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 10000; background: #fff; opacity: 0.8;">
+                <div style="display:table-cell; vertical-align:middle; text-align: center;">
+                    <span class="loading__anim"></span><br>
+                    <h2>Loading</h2>
+                </div>
+            </div>
+        </div>
+        <div id="note" style="position: relative;
+    top: 41px;">
+            <img style="width: 13%"
+                src="https://intranet.houseofit.com.au/SiteAssets/Logo/House of IT Logo signature.png">
+
+            <p class="lead" style="font-size: large;">We are always
+                striving to make House of I.T. a great place to work.<br> Thank you for taking the time to give us your
+                feedback.</p>
+            <p>
+        </div>
+
+        <div class="container" id="survey_form" style="max-width: 755px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;">
+            <div id="contact">
+                <h3>Employee Satisfaction Score</h3>
+                <h4 style="font-weight: 700;">How likely are you to recommend House of IT to a friend as a place to
+                    work?
+                </h4>
+                <h4 style="float:left">Very Unlikely</h4>
+                <h4 style="float:right">Very Likely</h4>
+                <fieldset>
+                    <input type="radio" name="radiobtn" value="1" id="radio-one" class="form-radio"><label
+                        for="radio-one">1</label>
+                    <input type="radio" name="radiobtn" value="2" id="radio-two" class="form-radio"><label
+                        for="radio-two">2</label>
+                    <input type="radio" name="radiobtn" value="3" id="radio-three" class="form-radio"><label
+                        for="radio-three">3</label>
+                    <input type="radio" name="radiobtn" value="4" id="radio-four" class="form-radio"><label
+                        for="radio-four">4</label>
+                    <input type="radio" name="radiobtn" value="5" id="radio-five" class="form-radio"><label
+                        for="radio-five">5</label>
+                    <input type="radio" name="radiobtn" value="6" id="radio-six" class="form-radio"><label
+                        for="radio-six">6</label>
+                    <input type="radio" name="radiobtn" value="7" id="radio-seven" class="form-radio"><label
+                        for="radio-seven">7</label>
+                    <input type="radio" name="radiobtn" value="8" id="radio-eight" class="form-radio"><label
+                        for="radio-eight">8</label>
+                    <input type="radio" name="radiobtn" value="9" id="radio-nine" class="form-radio"><label
+                        for="radio-nine">9</label>
+                    <input type="radio" name="radiobtn" value="10" id="radio-ten" class="form-radio"><label
+                        for="radio-ten">10</label>
+                </fieldset><br>
+                <h4 id="answer" style="text-align: center; display: none">Could you please tell us why you choose <span
+                        id="answer_number" style="color: red; font-size: 16px; font-weight: 500; border-bottom: 3px solid grey;
+                        display:inline-block;"></span>
+                    score?
+                </h4>
+                <input type="text" name="feedback" id="feedbackID" style="display: none"
+                    placeholder="Your answer here...">
+                <br>
+                <br>
+
+                <fieldset>
+                    <button name="submit" id="submit_survey_id" type="submit"
+                        onclick="post_survey(); return false;">Submit</button>
+                </fieldset>
+            </div>
+        </div>
+
+        <div class="jumbotron text-xs-center" id="thanks" style="display: none;">
+            <h1 class="display-3">Thank You!</h1>
+            <p class="lead"><strong>Thanks a bunch for filling survey that out.</strong> It means
+                a lot to us, just like you do!<br>
+                We really appreciate you giving us a moment of your time today. Thanks
+                for being you.</p>
+            <hr style="margin-top: 11rem;">
+            <p>
+                SharePoint | House of IT
+            </p>
+            <p class="lead">
+                <a class="btn btn-primary btn-sm" href="https://intranet.houseofit.com.au" role="button"
+                    style="color: rgb(255, 255, 255); text-decoration: none;">Continue to
+                    homepage</a>
+            </p>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+    <script type="text/javascript" src="/SiteAssets/Scripts/ENPS Survey and Report/new_form.js"></script>
+
+</html>
