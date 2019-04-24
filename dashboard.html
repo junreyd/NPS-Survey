@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>ENPS SURVEY ALL ITEMS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/SiteAssets/Scripts/ENPS Survey and Report/style.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+        <script src="/SiteAssets/Scripts/ENPS Survey and Report/util.js"></script>
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/highcharts-more.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    </head>
+    <style>
+        #scriptWPQ2 {
+            display: none !important;
+        }
+
+        /* #scriptWPQ2 {
+            display: none;
+        }
+
+        .ms-webpart-zone.ms-fullWidth {
+            display: none;
+        } */
+    </style>
+
+    <body>
+        <b>
+            <h1 style="margin-left: 35%; font-weight: 600;">Employee Satisfaction Score</h1>
+        </b>
+        <span id="span_year" style="position: relative;
+    left: 53%;"></span>
+        <br>
+        <br>
+        <div class="chart-container" style="width: 60%; height: 255px; position: relative;
+    left: 8%; top: 34px;">
+            <canvas id="myChart"></canvas>
+        </div>
+
+        <!-- <div class="container1" style="display: none;"> -->
+        <br>
+        <br>
+        <!-- <div id="chart" style="width: 376px;
+    height: 177px;
+    position: relative;
+    bottom: 249px; left: 68%;">
+            <canvas id="myPie"></canvas>
+            <div id="legend1"></div>
+        </div> -->
+        <div class="container_gauge">
+            <div id="gauge1" class="gauge"></div>
+            <span style="position: relative;
+    left: 112px;
+    bottom: 139px;">ENPS Actual Score</span>
+        </div>
+        <!-- </div> -->
+
+        <!-- <h3 style="position: relative; bottom: 146px; color: #1BA1E2;
+    font-weight: 500;">Employee Net Promoter Score</h3> -->
+
+
+        <div class="tabset" style="position: relative;
+    bottom: 284px;">
+            <!-- Tab 1 -->
+            <input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked>
+            <label for="tab1">ENPS Score</label>
+            <!-- Tab 2 -->
+            <input type="radio" name="tabset" id="tab2" aria-controls="rauchbier">
+            <label for="tab2">ENPS Feedback</label>
+
+
+            <div class="tab-panels">
+                <section id="marzen" class="tab-panel">
+                    <!-- <h3 style="position: relative; bottom: 146px; color: #1BA1E2;
+    font-weight: 500;">Employee Net Promoter Score</h3> -->
+                    <table id="enps_table">
+                        <tr>
+                            <th rowspan="2" id="enps_th">Months</th>
+                            <th rowspan="2" id="enps_th">Detractors</th>
+                            <th rowspan="2" id="enps_th">Passives</th>
+                            <th rowspan="2" id="enps_th">Promoters</th>
+                            <th rowspan="2" id="enps_th">Total Responses</th>
+                            <th style="border: 1px solid #ddd;" id="enps_th" colspan="2">Percentage</th>
+                            <th rowspan="2" id="enps_th">ENPS Actual Score</th>
+
+                        </tr>
+                        <tr>
+                            <th id="enps_th">Detractors</th>
+                            <th id="enps_th">Promoters</th>
+                        </tr>
+                    </table>
+                </section>
+                <section id="rauchbier" class="tab-panel">
+                    <select id="soflow" onchange="filterTextv2();" style="position: relative; bottom: 32px; left: 89%;">
+                        <option selected="true" disabled="disabled">Select Month</option>
+                    </select>
+                    <table id="enps_feedback_table">
+                        <tr>
+                            <th id="enps_feedback_th" style="display:none;">Months</th>
+                            <th id="enps_feedback_th">Feedback</th>
+                            <th id="enps_feedback_th">Rate</th>
+                        </tr>
+                        <tr id="tr_no_available" style="display: none;">
+                            <td colspan="4"><span style="color: red;">No data available!</span></td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+        </div>
+
+
+        <!-- <table id="enps_table">
+            <tr>
+                <th id="enps_th">Months</th>
+                <th id="enps_th">Detractors</th>
+                <th id="enps_th">Passives</th>
+                <th id="enps_th">Promoters</th>
+                <th id="enps_th">Total Responses</th>
+                <th id="enps_th">ENPS Actual Score</th>
+            </tr>
+        </table> -->
+
+        <!-- <h3 style="bottom: 80px;
+    position: relative; color: #1BA1E2;
+    font-weight: 500;">Employee Feedback</h3>
+        <select id="soflow" onchange="filterTextv2();" style="position: relative;
+    bottom: 130px;
+    left: 85%;">
+            <option selected="true" disabled="disabled">Select Month</option>
+        </select>
+        <table id="enps_feedback_table">
+            <tr>
+                <th id="enps_feedback_th">Feedback</th>
+                <th id="enps_feedback_th">Rate</th>
+            </tr>
+            <tr id="tr_no_available" style="display: none;">
+                <td colspan="4"><span style="color: red;">No data available!</span></td>
+            </tr>
+        </table> -->
+        <!-- <h1 id="h1_id" style="margin-left: 38%; display: none;">Employee Feeback</h1> -->
+        <script type="text/javascript" src="/SiteAssets/Scripts/ENPS Survey and Report/index.js"></script>
+    </body>
+
+</html>
